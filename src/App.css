@@ -2,7 +2,6 @@
 display: flex;
 justify-content: space-around;
 background-color: aqua;
-position: fixed;
 top: 0;
 width: 100vw;
 list-style: none;
@@ -18,7 +17,6 @@ list-style: none;
   }
   #catindex{
     padding-top: 4em;
-    
     background-color:red;
     height: 40vh;
     width: 100vw;
@@ -26,7 +24,6 @@ list-style: none;
 
   #notHome{
     padding-top: 4em;
-    
     background-color:red;
     height: 40vh;
     width: 100vw;
