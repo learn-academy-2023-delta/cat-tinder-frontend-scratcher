@@ -2,7 +2,6 @@
 display: flex;
 justify-content: space-around;
 background-color: aqua;
-position: fixed;
 top: 0;
 width: 100vw;
 list-style: none;
