@@ -2,7 +2,7 @@ import React from 'react'
 import { NavItem } from 'reactstrap'
 import { NavLink } from 'react-router-dom'
 
-const Header = (element) => {
+const Header = () => {
 
   return (
    <>
