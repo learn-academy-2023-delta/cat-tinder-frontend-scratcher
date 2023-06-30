@@ -15,7 +15,7 @@ import mockCats from "./mockCats"
 const App = () => {
   const [cats, setCats] = useState(mockCats)
 
-  console.log(cats)
+  console.log(cats) 
 
   return (
     <>
