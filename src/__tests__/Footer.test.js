@@ -1,7 +1,6 @@
-import { render, screen } from "@testing-library/react"
-import { BrowserRouter } from "react-router-dom"
-// import userEvent from "@testing-library/user-event"
-import Footer from "../components/Footer"
+import { render, screen } from "@testing-library/react";
+import { BrowserRouter } from "react-router-dom";
+import Footer from "../components/Footer";
 
 describe("<Footer />", () => {
   it("renders without crashing", () => {
@@ -9,28 +8,19 @@ describe("<Footer />", () => {
       <BrowserRouter>
         <Footer />
       </BrowserRouter>
-    )
-  })
-  // it("renders a logo with a src and alt", () => {
-  //   const div = document.createElement("div")
-  //   render(
-  //     <BrowserRouter>
-  //       <Footer />
-  //     </BrowserRouter>,
-  //     div
-  //   )
-  // })
-  // it("has clickable links", () => {
-  //   render(
-  //     <BrowserRouter>
-  //       <Footer />
-  //     </BrowserRouter>
-  //   )
-  //   userEvent.click(screen.getByText("Meet the Cats"))
-  //   expect(screen.getByText("Meet the Cats")).toBeInTheDocument()
-  //   userEvent.click(screen.getByText("Add a New Cat"))
-  //   expect(screen.getByText("Add a New Cat")).toBeInTheDocument()
-  //   userEvent.click(screen.getByText("Adopt a Cat!"))
-  //   expect(screen.getByText("Adopt a Cat!")).toBeInTheDocument()
-  // })
-})
+    );
+  });
+
+  it("displays the 'Made By Padge & Michael' text", () => {
+    render(
+      <BrowserRouter>
+        <Footer />
+      </BrowserRouter>
+    );
+
+    const linkElement = screen.getByText("Made By Padge & Michael");
+
+    expect(linkElement).toBeInTheDocument();
+  });
+});
+

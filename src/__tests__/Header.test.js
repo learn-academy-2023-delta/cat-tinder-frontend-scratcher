@@ -13,15 +13,7 @@ describe("<Header />", () => {
       div
     )
   })
-  // it("renders a logo with a src and alt", () => {
-  //   const div = document.createElement("div")
-  //   render(
-  //     <BrowserRouter>
-  //       <Header />
-  //     </BrowserRouter>,
-  //     div
-  //   )
-  // })
+  
   it("has clickable links", () => {
     render(
       <BrowserRouter>
@@ -32,8 +24,6 @@ describe("<Header />", () => {
     expect(screen.getByText("Meet the Cats")).toBeInTheDocument()
     userEvent.click(screen.getByText("Add a New Cat"))
     expect(screen.getByText("Add a New Cat")).toBeInTheDocument()
-    // userEvent.click(screen.getByText("Adopt a Cat!"))
-    // expect(screen.getByText("Adopt a Cat!")).toBeInTheDocument()
   })
 })
 
