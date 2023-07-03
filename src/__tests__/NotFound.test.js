@@ -6,6 +6,7 @@ describe('<NotFound />', () => {
   
   it('renders without crashing', () => {
     render(<NotFound />)
+    
     const headingElement = screen.getByRole('img', {
       name: /card image cap/i
     })
